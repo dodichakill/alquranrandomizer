@@ -22,10 +22,10 @@ const ayat = () => {
       ).innerHTML = `<div className="arab"> <h3>${resultArab}</h3></div>`;
       document.getElementById(
         "indo"
-      ).innerHTML = `<div className="indo"> <h4>Artinya : <br> ${resultIndo} </h4></div>`;
+      ).innerHTML = `<div className="indo"> <h4>Artinya : <br> <i>${resultIndo}</i> </h4></div>`;
       document.getElementById(
         "desk"
-      ).innerHTML = `<div className="desk"> <h5>Keterangan : <br>${resultDesk} </h5></div>`;
+      ).innerHTML = `<div className="desk"> <h5>Keterangan : <br> <i>${resultDesk}</i> </h5></div>`;
       document.getElementById(
         "info"
       ).innerHTML = `<h4>Surah ${resultInfoNama} (${resultInfoArti}) ayat ${resultInfoNo}</h4>`;

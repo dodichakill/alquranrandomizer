@@ -27,8 +27,13 @@ body {
   align-items: center;
 }
 a {
+  font-size: 5px;
   text-decoration: none;
-  font-size: 20px;
+  color: rgb(216, 148, 100);
+}
+a.random {
+  text-decoration: none;
+  font-size: 16px;
   background-color: whitesmoke;
   color: rgb(243, 81, 81);
   padding: 1em 1.5em;
@@ -37,7 +42,7 @@ a {
   text-align: center;
   transition: 0.5s all;
 }
-a:hover {
+a.random:hover {
   background-color: rgb(243, 81, 81);
   color: whitesmoke;
 }
@@ -60,7 +65,7 @@ a:hover {
   background-color: lightblue;
   width: 100%;
   height: auto;
-  color: green;
+  color: royalblue;
   font-size: 24px;
   display: grid;
   justify-content: center;
@@ -95,7 +100,7 @@ h1 {
   padding: 1em;
   color: white;
   font-weight: bolder;
-  font-size: 24px;
+  font-size: 16px;
   border-bottom: 2px solid rgb(255, 255, 255);
 }
 .deskripsi {
@@ -104,9 +109,29 @@ h1 {
   display: grid;
   justify-content: center;
   align-items: center;
+  background-color: gold;
+}
+footer {
+  width: 80%;
+  margin: 30px auto 0 auto;
+  padding: 0.5em;
+  text-align: center;
+  font-style: italic;
+  background-color: darkblue;
+  color: whitesmoke;
+  font-size: 14px;
+  letter-spacing: 2px;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.473);
+  font-weight: bold;
 }
 @media only screen and (min-width: 768px) {
   .container {
     width: 70%;
+  }
+  a.random {
+    font-size: 20px;
+  }
+  h1 {
+    font-size: 26px;
   }
 }
