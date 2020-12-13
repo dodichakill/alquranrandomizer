@@ -33,3 +33,11 @@ const ayat = () => {
     .catch((err) => console.log(err));
 };
 ayat();
+
+document.body.addEventListener("mousemove", ()=>{
+ const posisiX = Math.round((event.clientX / window.innerWidth) * 255);
+ const posisiY = Math.round((event.clientY / window.innerHeight) * 255);
+
+document.body.style.backgroundColor = 'rgb('+ posisiY +','+ posisiX +', 100)';
+});
+
