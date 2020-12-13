@@ -1,5 +1,3 @@
-// DOM
-let arab = document.querySelector("arab");
 // calling API
 const url = "https://api.banghasan.com/quran/format/json/acak";
 const ayat = () => {
